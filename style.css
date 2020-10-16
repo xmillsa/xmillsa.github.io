@@ -76,6 +76,7 @@ footer{
   transform: translateX(-50%);
   pointer-events: none;
   transition: opacity .2s;
+  padding-bottom: 4px;
 }
 .submenu li{
   padding: 10px 30px;
