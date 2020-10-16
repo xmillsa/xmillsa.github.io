@@ -14,14 +14,12 @@ header nav ul li{
   list-style: none;
 }
 
-header, footer{
-  background-color: #fff;
-}
 header, main{
   display: flex;
 }
 header{
   flex-direction: row;
+  background-color: #fff;
 }
 main{
   flex-direction: column;
@@ -29,6 +27,7 @@ main{
 }
 footer{
   text-align: center;
+  background-color: #383838;
 }
 .container{
   max-width: 700px;
