@@ -12,9 +12,13 @@ html, body{
 h1{
   font-weight: 300;
 }
-header h1{
+header h1, header h2{
   margin: 0;
   padding: 0;
+}
+header h1+h2{
+  font-size: 1.4em;
+  font-weight: 400;
 }
 header nav ul{
   margin: 0;
