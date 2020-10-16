@@ -1,5 +1,8 @@
 :root{
-  --text-color: #222;
+  --background-head: #fff;
+  --background-main: #eaebec;
+  --background-foot: #383840;
+  --text-color: #444;
   --default-padding: 1em;
   --footer-padding: 2em;
 }
@@ -64,16 +67,16 @@ header, main{
 header{
   padding: var( --default-padding );
   flex-direction: row;
-  background-color: #fff;
+  background-color: var( --background-head );
 }
 main{
   padding: var( --default-padding );
   flex-direction: column;
-  background-color: #eee;
+  background-color: var( --background-main );
 }
 footer{
   text-align: center;
-  background-color: #383838;
+  background-color: var( --background-foot );
   padding: var( --footer-padding );
   color: #f4f4f4;
 }
@@ -113,7 +116,7 @@ header nav ul li:hover .submenu{
   opacity: 1;
   pointer-events: all;
 }
-.moveup{
+.remove-top-padding{
   position: relative;
-  top: var( --default-padding );
+  margin-top: var( --default-padding );
 }
