@@ -4,6 +4,8 @@
 html, body{
   font-family: Quicksand, sans-serif;
   font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.2;
 }
 
 h1{
@@ -28,6 +30,7 @@ main{
 footer{
   text-align: center;
   background-color: #383838;
+  padding: 2em;
 }
 .container{
   max-width: 700px;
