@@ -91,7 +91,7 @@ footer{
   padding: 10px 30px;
   margin-top: 4px;
 }
-header nav ul li a:hover .submenu{
+header nav ul li:hover .submenu{
   opacity: 1;
   pointer-events: all;
 }
