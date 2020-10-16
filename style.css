@@ -50,3 +50,11 @@ footer{
 .flex{
   display: flex;
 }
+
+.flex-center{
+  align-items: center;
+}
+
+.flex-space-around{
+  justify-content: space-between;
+}
