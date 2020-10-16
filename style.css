@@ -29,6 +29,8 @@ header nav ul{
 }
 header nav ul li{
   list-style: none;
+}
+header nav ul li a{
   padding: 6px 10px;
   position: relative;
   transition: background-color .2s;
