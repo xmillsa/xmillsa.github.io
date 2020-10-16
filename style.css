@@ -81,6 +81,7 @@ footer{
   background-color: #fff;
   text-align: center;
   transform: translateX(-50%);
+  cursor: auto;
   pointer-events: none;
   transition: opacity .2s;
   padding-bottom: 4px;
