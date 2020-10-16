@@ -33,8 +33,6 @@ header nav ul li{
   position: relative;
   transition: background-color .2s;
   white-space: nowrap;
-}
-header nav > ul > li{
   cursor: pointer;
 }
 header nav ul li:hover{
@@ -89,7 +87,6 @@ footer{
 .submenu li{
   padding: 10px 30px;
   margin-top: 4px;
-  cursor: pointer;
 }
 header nav ul li:hover .submenu{
   opacity: 1;
