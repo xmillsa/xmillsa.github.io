@@ -25,6 +25,9 @@ header nav ul li{
   padding: 6px 10px;
   position: relative;
 }
+header nav ul li:hover{
+  background-color: #e2e2e2;
+}
 header, main{
   padding: 1em;
   display: flex;
