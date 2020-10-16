@@ -25,6 +25,7 @@ header nav ul li{
   padding: 6px 10px;
   position: relative;
   transition: background-color .2s;
+  cursor: pointer;
 }
 header nav ul li:hover{
   background-color: #e2e2e2;
@@ -81,5 +82,4 @@ footer{
 header nav ul li:hover .submenu{
   opacity: 1;
   pointer-events: all;
-  cursor: pointer;
 }
