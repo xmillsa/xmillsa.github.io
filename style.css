@@ -9,17 +9,14 @@ html, body{
   padding: 0;
   margin: 0;
 }
-
 h1{
   font-weight: 300;
 }
-
 header h1{
   margin: 0;
   padding: 0;
   font-size: 1.2em;
 }
-
 header nav ul{
   margin: 0;
   padding: 0;
@@ -29,13 +26,11 @@ header nav ul{
 header nav ul li{
   list-style: none;
 }
-
 header, main{
   padding: 1em;
   display: flex;
 }
 header{
-  display: flex;
   flex-direction: row;
   background-color: #fff;
 }
@@ -52,4 +47,7 @@ footer{
 .container{
   max-width: 700px;
   margin: auto;
+}
+.flex{
+  display: flex;
 }
