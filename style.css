@@ -16,6 +16,10 @@ a{
 h1{
   font-weight: 300;
 }
+img{
+  max-width: 100%;
+  border: 0;
+}
 header h1, header h2{
   margin: 0;
   padding: 0;
