@@ -1,6 +1,6 @@
 :root{
   --background-head: #fff;
-  --background-main: #ecedee;
+  --background-main: #f0f1f2;
   --background-foot: #383839;
   --text-color: #444;
   --default-padding: 1em;
@@ -118,5 +118,5 @@ header nav ul li:hover .submenu{
 }
 .remove-top-padding{
   position: relative;
-  margin-top: var( --default-padding );
+  margin-top: calc( -1 * var( --default-padding ) );
 }
