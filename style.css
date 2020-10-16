@@ -34,10 +34,12 @@ header nav ul{
   margin: 0;
   padding: 0;
 }
-header nav ul li a{
+header nav ul li{
   list-style: none;
-  padding: 6px 10px;
   position: relative;
+}
+header nav ul li a{
+  padding: 6px 10px;
   transition: background-color .2s;
   white-space: nowrap;
   display: block;
