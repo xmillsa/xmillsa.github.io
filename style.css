@@ -1,3 +1,8 @@
+:root{
+  --text-color: #222;
+  --default-padding: 1em;
+  --footer-padding: 2em;
+}
 *{
   box-sizing: border-box;
 }
@@ -8,7 +13,7 @@ html, body{
   line-height: 1.4;
   padding: 0;
   margin: 0;
-  color: #222;
+  color: var( --text-color );
 }
 a{
   color: #34f;
@@ -57,19 +62,19 @@ header, main{
   display: flex;
 }
 header{
-  padding: 1em;
+  padding: var( --default-padding );
   flex-direction: row;
   background-color: #fff;
 }
 main{
-  padding: 0 1em;
+  padding: var( --default-padding );
   flex-direction: column;
   background-color: #eee;
 }
 footer{
   text-align: center;
   background-color: #383838;
-  padding: 2em;
+  padding: var( --footer-padding );
   color: #f4f4f4;
 }
 .container{
@@ -107,4 +112,8 @@ footer{
 header nav ul li:hover .submenu{
   opacity: 1;
   pointer-events: all;
+}
+.moveup{
+  position: relative;
+  top: var( --default-padding );
 }
