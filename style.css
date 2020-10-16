@@ -23,6 +23,7 @@ a{
 }
 h1{
   font-weight: 300;
+  margin-top: 0;
 }
 img{
   max-width: 100%;
