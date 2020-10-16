@@ -38,7 +38,7 @@ header nav ul li a{
   display: block;
   cursor: pointer;
 }
-header nav ul li:hover{
+header nav ul li a:hover{
   background-color: #e2e2e2;
 }
 header, main{
@@ -87,11 +87,11 @@ footer{
   transition: opacity .2s;
   padding-bottom: 4px;
 }
-.submenu li{
+.submenu li a{
   padding: 10px 30px;
   margin-top: 4px;
 }
-header nav ul li:hover .submenu{
+header nav ul li a:hover .submenu{
   opacity: 1;
   pointer-events: all;
 }
