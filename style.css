@@ -10,6 +10,10 @@ h1{
   font-weight: 300;
 }
 
+header nav ul li{
+  list-style: none;
+}
+
 header, footer{
   background-color: #fff;
 }
