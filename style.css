@@ -50,14 +50,15 @@ header nav ul li a:hover{
   background-color: #e2e2e2;
 }
 header, main{
-  padding: 1em;
   display: flex;
 }
 header{
+  padding: 1em;
   flex-direction: row;
   background-color: #fff;
 }
 main{
+  padding: 0 1em;
   flex-direction: column;
   background-color: #eee;
 }
