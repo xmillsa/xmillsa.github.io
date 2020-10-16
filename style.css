@@ -74,7 +74,9 @@ footer{
   transition: opacity .2s;
 }
 .submenu li{
-  padding: 10px 20px;
+  padding: 10px 30px;
+  margin-top: 4px;
+  border-top: 1px #f9f9f9;
 }
 header nav ul li:hover .submenu{
   opacity: 1;
