@@ -24,6 +24,7 @@ header nav ul li{
   list-style: none;
   padding: 6px 10px;
   position: relative;
+  transition: background-color .2s;
 }
 header nav ul li:hover{
   background-color: #e2e2e2;
