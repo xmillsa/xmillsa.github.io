@@ -10,14 +10,23 @@ h1{
   font-weight: 300;
 }
 
-header{
+header, footer{
+  background-color: #fff;
+}
+header, main{
   display: flex;
+}
+header{
   flex-direction: row;
 }
 main{
-  display: flex;
   flex-direction: column;
+  background-color: #eee;
 }
 footer{
   text-align: center;
+}
+.container{
+  max-width: 700px;
+  margin: auto;
 }
