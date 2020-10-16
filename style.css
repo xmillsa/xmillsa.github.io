@@ -1,4 +1,23 @@
+*{
+  box-sizing: border-box;
+}
 html, body{
   font-family: Quicksand, sans-serif;
+  font-weight: 400;
+}
+
+h1{
   font-weight: 300;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+}
+main{
+  display: flex;
+  flex-direction: column;
+}
+footer{
+  text-align: center;
 }
