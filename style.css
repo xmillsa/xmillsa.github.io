@@ -26,6 +26,7 @@ header nav ul li{
   position: relative;
   transition: background-color .2s;
   cursor: pointer;
+  white-space: nowrap;
 }
 header nav ul li:hover{
   background-color: #e2e2e2;
