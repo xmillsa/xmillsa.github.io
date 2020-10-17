@@ -56,7 +56,7 @@
     </header>
     <main>
       <div class="container">
-        <img width="979" height="348" src="header.jpg" class="remove-top-padding" />
+        <img width="979" height="348" data-img="header.jpg" class="remove-top-padding" />
         <h1>Welcome</h1>
         <p>Welcome to the online presence of the IT Services department at Birkenhead Sixth Form College.<br>
         The mission of IT Services is to support teaching and learning activities of staff and students of the college through;</p>
@@ -76,8 +76,15 @@
       const links = document.querySelectorAll('link[rel="preload"]');
       let i = 0;
       for (; i < links.length; i += 1) {
-          links[i].rel = 'stylesheet'
+          links[i].rel = 'stylesheet';
       }
+      // Load images.
+        const imgs = document.querySelectorAll('img[data-img]');
+        i = 0;
+        for (; i < imgs.length; i += 1) {
+            imgs[i].src = imgs[i].dataset.img;
+            imgs[i].dataset.img = null;
+        }
       document.body.classList.remove( 'no-js' );
     </script>
   </body>
