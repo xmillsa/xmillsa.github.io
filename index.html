@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/style.css" media="all" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <title>IT Services - BSFC</title>
-    <link rel="stylesheet" media="print" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" onload="this.media='all'" />
+    <link rel="preload" as="style" media="all" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" />
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" />
     </noscript>
@@ -70,5 +70,12 @@
         <p>IT Services - Birkenhead Sixth Form College</p>
       </div>
     </footer>
+    <script>
+    const links = document.querySelectorAll('link[rel="preload"]');
+    let i = 0;
+    for (; i < links.length; i += 1) {
+        links[i].rel = 'stylesheet'
+    }
+    </script>
   </body>
 </html>
