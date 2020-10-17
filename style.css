@@ -10,6 +10,7 @@
   box-sizing: border-box;
 }
 html, body{
+  display: block;
   font-family: Quicksand, Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
