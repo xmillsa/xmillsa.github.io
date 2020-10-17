@@ -83,7 +83,7 @@
         i = 0;
         for (; i < imgs.length; i += 1) {
             imgs[i].src = imgs[i].dataset.img;
-            imgs[i].dataset.img = null;
+            imgs[i].removeAttribute('data-img');
         }
       document.body.classList.remove( 'no-js' );
     </script>
