@@ -109,7 +109,6 @@ footer{
   transform: translateX(-50%);
   cursor: auto;
   pointer-events: none;
-  transition: opacity .2s;
   padding-bottom: 4px;
 }
 .submenu li a{
@@ -119,6 +118,7 @@ footer{
 header nav ul li:hover .submenu{
   opacity: 1;
   pointer-events: all;
+  transition: opacity .2s;
 }
 .remove-top-padding{
   position: relative;
