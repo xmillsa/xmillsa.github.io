@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Test of BSFC IT Services site." />
+    <link rel="preconect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>IT Services - BSFC</title>
+    <style>
+        body {
+            display: none;
+        }
+    </style>
+    <link rel="preload" as="style" media="all" href="/style.css" />
+    <link rel="preload" as="style" media="all" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" />
+    <noscript>
+        <link rel="stylesheet" href="/style.css" media="all" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" />
+    </noscript>
+</head>
+
+<body class="no-js">
+    <main>
+        <section class="fullWidth teams center clipSlant">
+            <h1 class="bigHeader"><a href="/">Teams</a></h1>
+        </section>
+        <section class="container breadcrumbs">
+            <a href="/">Home</a>|
+            <a class="active" href="/teams">Teams</a>
+        </section>
+        <section class="fullWidth center yellow overlappedHeader">
+            <h2 class="">Contents</h2>
+        </section>
+        <section class="container white padded softShadow">
+            <h3>Getting Started</h3>
+            <ul>
+                <li><a href="/teams/install-teams">Download and Install Teams</a></li>
+                <li><a href="/teams/login">Logging into Teams</a></li>
+                <li><a href="/teams/overview">Overview of the Teams app</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        IT Services - Birkenhead Sixth Form College
+    </footer>
+    <script>
+        const links = document.querySelectorAll( 'link[rel="preload"]' );
+        let i = 0;
+        for ( ; i < links.length; i += 1 ) {
+            links[i].rel = "stylesheet";
+        }
+        // Load images.
+        const imgs = document.querySelectorAll( "img[data-img]" );
+        i = 0;
+        for ( ; i < imgs.length; i += 1 ) {
+            imgs[i].src = imgs[i].dataset.img;
+            imgs[i].removeAttribute( "data-img" );
+        }
+        document.body.classList.remove( "no-js" );
+    </script>
+</body>
+
+</html>
