@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Test of BSFC IT Services site." />
+    <link rel="preconect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>IT Services - BSFC</title>
+    <style>
+        body {
+            display: none;
+        }
+    </style>
+    <link rel="preload" as="style" media="all" href="/style.css" />
+    <link rel="preload" as="style" media="all" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" />
+    <noscript>
+        <link rel="stylesheet" href="/style.css" media="all" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" />
+    </noscript>
+</head>
+
+<body class="no-js">
+    <main>
+        <section class="fullWidth teams center clipSlant">
+            <h1 class="bigHeader"><a href="/">Teams</a></h1>
+        </section>
+        <section class="container breadcrumbs">
+            <a href="/">Home</a>|
+            <a href="/teams">Teams</a>|
+            <a class="active" href="/teams/install-teams">How to Install Teams</a>
+        </section>
+        <section class="fullWidth center yellow overlappedHeader">
+            <h2 class="">Contents</h2>
+        </section>
+        <section class="container white padded gapAfter softShadow">
+            <p>Well let's get started, to install Teams you only need to follow 2 simple steps:</p>
+            <ol>
+                <li><a href="#downloadTeams">Download Teams</a></li>
+                <li><a href="#installTeams">Install Teams</a></li>
+            </ol>
+            <p><em><small>Just a quick note, this how-to is also the exact same process for upgrading an existing Teams installation!</small></em></p>
+        </section>
+        <a class="nextInstruction" href="#downloadTeams"></a>
+        <section class="fullWidth center orange overlappedHeader">
+            <h2><a id="downloadTeams">Download Teams</a></h2>
+        </section>
+        <section class="container white padded gapAfter softShadow">
+            <p>To download teams, simply click the following link:<br>
+                <a href="https://teams.microsoft.com/uswe-01/downloads">Microsoft Teams Download Page</a>
+            </p>
+            <p>You should then see something similar to this:</p>
+            <img class="img" src="./downloadTeamsButton.png" loading="lazy" height="520" />
+            <p>From here simply select:<br>
+                <a href="https://teams.microsoft.com/uswe-01/downloads" class="ms-download-teams"><img src="https://teams.microsoft.com/uswe-01/dl/launcher/images/icons/download-icon-v2.svg" />Download Teams</a>
+            </p>
+            <p>Then hit "Save File" or "Keep" depending on your choice of browser.</p>
+            <p>And that's it for downloading, on to the next step!</p>
+        </section>
+        <a class="nextInstruction" href="#installTeams"></a>
+        <section class="fullWidth center red overlappedHeader">
+            <h2><a id="installTeams">Install Teams</a></h2>
+        </section>
+        <section class="container white padded softShadow">
+            <p>Now we have downloaded Teams, the next step is to simply run it!</p>
+            <p>Navigate to your downloads folder, this is usually something along the lines of:<br>
+                <em>C:\Users\&lt;your username&gt;\Downloads\</em>
+            </p>
+            <p>For Windows users it will most likely be called "Teams_windows_x64.exe" and look similar to this:</p>
+            <img class="img" src="./winDownloadsFolder.png" loading="lazy" height="450" />
+            <p>When you have found the Teams installer, simply double-click on it to start the install.</p>
+            <p>If you happen to be presented with the following, simply hit "Run" to start the installation.</p>
+            <img class="img" src="./securityWarning.png" loading="lazy" height="344" />
+            <p>During installation, you may breifly see the following small pop-up, don't worry if you don't, Teams installs very quickly so you may miss it.</p>
+            <img class="img" src="./installingMicrosoftTeams.png" loading="lazy" height="248" />
+            <p>Once Teams has been installed, it will automatically open up, asking you to sign in.</p>
+            <p>Now that Teams is installed successfully, we can move on to the next step!<br>
+                <a href="../login">Logging in to Teams</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        IT Services - Birkenhead Sixth Form College
+    </footer>
+    <script>
+        const links = document.querySelectorAll( 'link[rel="preload"]' );
+        let i = 0;
+        for ( ; i < links.length; i += 1 ) {
+            links[i].rel = "stylesheet";
+        }
+        // Load images.
+        const imgs = document.querySelectorAll( "img[data-img]" );
+        i = 0;
+        for ( ; i < imgs.length; i += 1 ) {
+            imgs[i].src = imgs[i].dataset.img;
+            imgs[i].removeAttribute( "data-img" );
+        }
+        document.body.classList.remove( "no-js" );
+    </script>
+</body>
+
+</html>
