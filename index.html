@@ -1,91 +1,73 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Test of BSFC IT Services site.">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Test of BSFC IT Services site." />
     <link rel="preconect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <title>IT Services - BSFC</title>
-    <style>body{display:none}</style>
+    <style>
+        body {
+            display: none;
+        }
+    </style>
     <link rel="preload" as="style" media="all" href="/style.css" />
     <link rel="preload" as="style" media="all" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" />
     <noscript>
-      <link rel="stylesheet" href="/style.css" media="all" />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" />
+        <link rel="stylesheet" href="/style.css" media="all" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" />
     </noscript>
-  </head>
-  <body class="no-js">
-    <header>
-      <div class="container flex flex-center flex-space-around">
-        <div>
-          <h1>BSFC</h1>
-          <h2>IT Services</h2>
-        </div>
-        <nav>
-          <ul class="flex">
-            <li><a href="/">Home</a></li>
-            <li><a href="software.html">Software</a>
-              <ul class="submenu">
-                <li><a href="microsoft-teams.html">Microsoft Teams</a></li>
-                <li><a href="/">Office365 - Students</a></li>
-                <li><a href="/">Remote Access</a></li>
-                <li><a href="/">Remote Network Drives</a></li>
-                <li><a href="/">Saving Your Files</a></li>
-              </ul>
-            </li>
-            <li><a href="/">Hardware</a>
-              <ul class="submenu">
-                <li><a href="/">ID Badges</a></li>
-                <li><a href="/">Eduroam Wireless</a></li>
-                <li><a href="/">Printing</a></li>
-              </ul>
-            </li>
-            <li><a href="/">Staff</a>
-              <ul class="submenu">
-                <li><a href="/">Email</a></li>
-                <li><a href="/">Office365 - Staff</a></li>
-                <li><a href="/">Phone System</a></li>
-              </ul>
-            </li>
-            <li><a href="/">IT Policies</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+</head>
+
+<body class="no-js">
+    <header class="fullImage"></header>
     <main>
-      <div class="container">
-        <img width="979" height="348" data-img="header.jpg" class="remove-top-padding" />
-        <h1>Welcome</h1>
-        <p>Welcome to the online presence of the IT Services department at Birkenhead Sixth Form College.<br>
-        The mission of IT Services is to support teaching and learning activities of staff and students of the college through;</p>
-        <ul>
-          <li>The provision of a robust and effective computer network</li>
-          <li>Prompt and efficient user support</li>
-          <li>The development of new facilities and services relevant to the college's changing needs</li>
-        </ul>
-      </div>
+        <section class="fullWidth yellow center clipSlant">
+            <h1 class="bigHeader">IT Services</h1>
+        </section>
+        <section class="container info white center padded">
+            <p>Find all your IT Support documentation here!<br>
+                Designed for ease of use with user-friendly instructions.</p>
+        </section>
+        <section class="container white-text center">
+            <h2>Select the product you need help with to get started!</h2>
+        </section>
+        <section class="container flex flex-space-around center">
+            <a href="/teams" class="modal white">
+                <h2 class="teams">Teams</h2>
+                <img src="/img/teamsLogo.png" />
+            </a>
+            <a href="/" class="modal white">
+                <h2 class="word">Word</h2>
+                <img src="/img/wordLogo.png" />
+            </a>
+            <a href="/" class="modal white">
+                <h2 class="outlook">Outlook</h2>
+                <img src="/img/outlookLogo.png" />
+            </a>
+        </section>
     </main>
     <footer>
-      <div class="container">
-        <p>IT Services - Birkenhead Sixth Form College</p>
-      </div>
+        IT Services - Birkenhead Sixth Form College
     </footer>
     <script>
-      const links = document.querySelectorAll('link[rel="preload"]');
-      let i = 0;
-      for (; i < links.length; i += 1) {
-          links[i].rel = 'stylesheet';
-      }
-      // Load images.
-        const imgs = document.querySelectorAll('img[data-img]');
-        i = 0;
-        for (; i < imgs.length; i += 1) {
-            imgs[i].src = imgs[i].dataset.img;
-            imgs[i].removeAttribute('data-img');
+        const links = document.querySelectorAll( 'link[rel="preload"]' );
+        let i = 0;
+        for ( ; i < links.length; i += 1 ) {
+            links[i].rel = "stylesheet";
         }
-      document.body.classList.remove( 'no-js' );
+        // Load images.
+        const imgs = document.querySelectorAll( "img[data-img]" );
+        i = 0;
+        for ( ; i < imgs.length; i += 1 ) {
+            imgs[i].src = imgs[i].dataset.img;
+            imgs[i].removeAttribute( "data-img" );
+        }
+        document.body.classList.remove( "no-js" );
     </script>
-  </body>
+</body>
+
 </html>
